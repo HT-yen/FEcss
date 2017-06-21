@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding:  0;
+	box-sizing: border-box;
+}
+.picture::before{
+	content: 'before';
+}
+.picture::after{
+	content: 'after';
+}
+ul:hover{
+background: #469DB6;
+}
+ul li{
+	background: #BDBF3B;
+	width: 50%;
+	height: 200px;
+	box-shadow: 5px 5px 5px #666;
+	border: 2px solid #303A12;
+	box-sizing: border-box;
+	display: inline-block;
+	/* font-family */
+}
+.a{
+	background: #7b3737;
+}
+.ba{
+	background: #96B636;
+}
+.b{
+	background: #52C1E4;
+}

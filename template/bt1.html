@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	            <title>Photoshop</title>
+	             <link rel="stylesheet" type="text/css" href="../css/style.css" />
+	             <script src="../js/jquery-latest.js">
+                  //path of use JQuery 
+                </script>
+
+                 <script>
+
+                function showdown(id) { 
+                var idstr="#"+id;  
+                $(idstr).toggle("show");
+
+                // $(idstr).css('display' , 'block');    
+            
+                }
+                </script>
+	
+</head>
+<body >
+<header class="container">
+<div class="top">
+	<div class="logo"><a href="#"><p class="textlogo">Phong kham y</p></a></div>
+	<nav style="display: inline;">
+	    <ul style="display: inline;">
+			<li class="link">
+				<a onclick="showdown('gioithieu')" >Gioi thieu</a>
+				<div id="gioithieu" class="btdowncontain">
+			<a href="#" class="btdown">Gioi thieu chung</a>
+			<a href="#" class="btdown">Lich su phat trien</a>
+			</div>
+			</li>
+			
+			<li class="link">
+				<a onclick="showdown('chuyenkhoa')" >Chuyen khoa</a>
+				<div id="chuyenkhoa" class="btdowncontain">
+			<a href="#" class="btdown">Khoa noi</a>
+			<a href="#" class="btdown">Khoa ngoai</a>
+		    </div>
+			</li>
+			</li>
+			<li class="link">
+				<a>Bac si</a>
+				
+			</li>
+			<li class="link">
+				<a>Tai khoan</a>
+				
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+<table width="100%">
+	<tr>
+		<td class="headerlogo"><marquee width=50%> <h1 style="color: #1A4663; margin-top: 35px">WELCOME------------------WELCOME</h1></marquee></td>
+	</tr>
+</table>
+</header>
+<main style="width: 1050px;margin-left: 150px;">
+	<div class="item">
+			<img src="../image/daucotay.jpg" class="iteminside">
+            <p class="textdescribe"><b class="index">dau co tay</b><br> ------------------------------------------------------------------------------</p>
+			
+	</div>
+	<div class="item">
+			<a><img src="../image/chamnoi.jpg" class="iteminside">
+			 <p class="textdescribe"><b class="index">dau co tay</b><br> <------------------------------------------------------------------------------</p>
+			 </a>
+	</div>
+	<div class="item">
+			<a><img src="../image/chamnoi2.jpg" class="iteminside">
+			 <p class="textdescribe"><b class="index">dau co tay</b><br> ------------------------------------------------------------------------------</p>
+			 </a>
+	</div>
+	<div class="item">
+			<a><img src="../image/thoatvidiadem.jpg" class="iteminside">
+			 <p class="textdescribe"><b class="index">dau co tay</b><br> ------------------------------------------------------------------------------</p>
+			 </a>
+	</div>
+</main>
+</body>
+<footer class="footer">
+Address: --------------------
+<div>
+	<nav>
+		<ul>
+			<li class="supporter">
+				b1
+			</li>
+			<li class="supporter">
+				b2
+			</li>
+			<li class="supporter">
+				b3
+			</li>
+			<li class="supporter">
+				b4
+			</li>
+		</ul>
+	</nav>
+</div>
+</footer>
+</html>

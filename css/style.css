@@ -1,0 +1,132 @@
+* {	font-family: 'Open Sans', sans-serif; }
+.container{
+	align-items: center;
+	margin-top: 0px;
+	width: 100%;
+}
+.top{
+	/* background-color: #fff; */
+	margin-left: 150px;
+	width: 80%;
+	height: 100px;
+	display: inline-block;
+}
+/* .top::after
+{
+	content: "kkdd"
+} */
+.headerlogo{
+	text-align: center;
+	background: url("../image/header1.jpg");
+	height: 100px;
+	width: 100%;
+	display: block;
+}
+.logo{
+	display: inline-block;
+	background: url("../image/logo.png");
+	width: 9%;
+	height: 100%;
+}
+.logo:hover{
+	opacity: 0.5;
+}
+.link{
+	position: relative;
+	/* margin-left: 50px; */
+	text-transform: uppercase;
+	color: #DA1810;
+	width: 150px;
+	height: 25px;
+	border:  0.5px double #D99724 ;
+    display: inline-block;
+    text-align: center;
+    /* width: 7%; */
+    cursor: pointer;
+}
+.link:hover{
+   background-color: #49BEA1;
+}
+.item{
+	margin: 30px;
+	/* padding: 50px; */
+	display: inline-block;
+	width: 24%;
+	height: 220px;
+	border: 0.5px solid #53EA34;
+
+}
+
+.item:hover{
+    background: #9FEB24;
+}
+.iteminside{
+	width: 100%;
+	/* height: 180px; */
+}
+.iteminside:hover{
+	opacity: 0.5;
+}
+.textdescribe{	
+	margin-top: 0px;
+	width: 100%;
+	text-align: center;
+	height: 65px;
+	background-color: #8BC2CB;
+}
+.index{
+	text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    color: #E84A22;
+}
+.footer{
+	width: 100%;
+	height: 150px;
+	background: #6FCE77;
+	text-align: center;
+	color: red;
+}
+.footer::after{
+	display: table;
+	width: 100%;
+	height: 100px;
+	background: #6FCE77;
+}
+.supporter
+{
+	background: #EEA231;
+	margin-left: 20px;
+	/* float: left; */
+	width: 7%;
+	height: 70px;
+	display: inline-block;
+	background: url('../image/supporter.png');
+}
+.textlogo{
+	margin: 20%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #F8F450;
+	font-size: 18px;
+}
+.btdowncontain
+{
+	position: absolute;
+	margin-top: 20px;
+display:none;
+z-index: 1;
+}
+.btdown
+{
+	text-transform: none;
+	cursor: pointer;
+	overflow: auto;
+	width: 200px;
+	display: block;
+	border:  0.5px solid #D99724 ;
+}
+.btdown:hover{
+	background: #D99724 ;
+}
+
