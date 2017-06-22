@@ -13,7 +13,9 @@
 }
 /* .top::after
 {
-	content: "kkdd"
+	content: "";
+	clear:   box;
+    display: block or table;
 } */
 .headerlogo{
 	text-align: center;
@@ -48,17 +50,25 @@
    background-color: #49BEA1;
 }
 .item{
-	margin: 30px;
+	margin-bottom: 10px;
+	margin-left: 0.1%;
+	/* padding-left: 10px; */
 	/* padding: 50px; */
-	display: inline-block;
-	width: 24%;
-	height: 220px;
-	border: 0.5px solid #53EA34;
+	/* display: inline-block; */
+	float: left;
+	width: 33%;
+	height: 212px;
+	/* border: 0.5px solid #53EA34; */
 
 }
 
 .item:hover{
     background: #9FEB24;
+}
+.item::after{
+	content: "";
+	clear: both;
+	display: block;
 }
 .iteminside{
 	width: 100%;
@@ -71,7 +81,7 @@
 	margin-top: 0px;
 	width: 100%;
 	text-align: center;
-	height: 65px;
+	/* height: 65px; */
 	background-color: #8BC2CB;
 }
 .index{
