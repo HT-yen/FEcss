@@ -42,6 +42,24 @@ table {
 * {
   font-family: 'Open Sans', sans-serif; }
 
+@font-face {
+  font-family: Lobster;
+  src: url("../fonts/Lobster-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Play fair Black;
+  src: url("../fonts/PlayfairDisplaySC-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Play fair Italic;
+  src: url("../fonts/PlayfairDisplaySC-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .container {
   align-items: center;
   margin-top: 0px;
@@ -108,6 +126,9 @@ table {
   animation-duration: 1s;
   animation-iteration-count: infinite; }
 
+a {
+  font-family: Play fair Black; }
+
 .text {
   color: #1A4663;
   margin-top: 30px; }
@@ -131,9 +152,17 @@ table {
     height: 50%; }
   .item .textdescribe {
     margin: 0 auto;
+    overflow: auto;
     width: 100%;
     text-align: center;
     height: 40%; }
+    .item .textdescribe .index {
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: underline;
+      text-decoration: underline;
+      color: #E84A22;
+      font-family: Lobster; }
   .item .arrow {
     right: 0;
     bottom: 0;
@@ -152,13 +181,6 @@ table {
 } */
 .item:hover {
   opacity: 0.5; }
-
-.index {
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration: underline;
-  color: #E84A22; }
 
 .footer {
   width: 100%;
