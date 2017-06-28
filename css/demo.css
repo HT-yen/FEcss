@@ -31,3 +31,6 @@ ul li{
 .b{
 	background: #52C1E4;
 }
+p::after{
+	content: attr(datafoo);
+}

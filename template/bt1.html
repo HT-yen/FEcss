@@ -17,12 +17,13 @@
             
                 }
                 </script>
+
 	
 </head>
 <body >
 <header class="container">
 <div class="top">
-	<div class="logo"><a href="#"><p class="textlogo">Phong kham y</p></a></div>
+	<div class="logo"><a href="#"><p class="textlogo"> Phong kham y</p></a></div>
 	<nav style="display: inline;">
 	    <ul style="display: inline;">
 			<li class="link">
@@ -32,7 +33,6 @@
 			<a href="#" class="btdown">Lich su phat trien</a>
 			</div>
 			</li>
-			
 			<li class="link">
 				<a onclick="showdown('chuyenkhoa')" >Chuyen khoa</a>
 				<div id="chuyenkhoa" class="btdowncontain">
@@ -43,11 +43,9 @@
 			</li>
 			<li class="link">
 				<a>Bac si</a>
-				
 			</li>
 			<li class="link">
 				<a>Tai khoan</a>
-				
 			</li>
 			
 		</ul>
@@ -55,63 +53,86 @@
 </div>
 <table width="100%">
 	<tr>
-		<td class="headerlogo"><marquee width=50%> <h1 style="color: #1A4663; margin-top: 35px">WELCOME------------------WELCOME</h1></marquee></td>
+		<td class="headerlogo"><marquee width=50%> <h1 class="text">Phòng khám chuyên khoa - Vật lý trị liệu - Phục hồi chức năng</h1></marquee></td>
 	</tr>
 </table>
 </header>
 <main>
-<aside style="width: 24%;float: left; margin: 0 auto;">
-	<div>
-		<p style="width: 100%;background: #89BBC6;height: 40px;margin-left: 20px;">Nguoi lon</p>
-			<ul style="width: 70%;margin: 10%">
-				<li>
-					<a> Dau co tay</a>
-					</li>
-					<li>
-					<a> Dau cot song</a>
-					</li>
-					<li>
-					<a> Thoat vi dia dem</a>
-					</li>
-					<li>
-					<a> Dau chan</a>
+<aside class="aside_container">
+	<div class="left_container">
+		<div class="left_item">nguoi lon</div>
+		<ul style="width: 70%;margin: 10%;line-height: 2;">
+			<li>
+				<a> Dau co tay</a>
 				</li>
-			</ul>
+				<li>
+				<a> Dau cot song</a>
+				</li>
+				<li>
+				<a> Thoat vi dia dem</a>
+				</li>
+				<li>
+				<a> Dau chan</a>
+			</li>
+		</ul>
 
-			<p style="width: 100%;background: #89BBC6 ;height: 40px;;margin-left: 20px;"> Tre em</p>
-			<p style="width: 100%;background: #89BBC6 ;height: 40px;;margin-left: 20px;"> Dat lich kham</p>
-			<ul>
-			<input type="text" name="txt1">
-			<input type="text" name="txt2">
-			<br>
-			<input type="button" name="bt1" value="ok">
-			</ul>
-		
+		<div class="left_item"> Tre em</div>
+		<div class="left_item"> Dat lich kham</div>
+		<ul>
+		<input type="text" name="txt1" placeholder="Ho & ten">
+		<input type="text" name="txt2" placeholder="Dia chi">
+		<input type="text" name="txt3" placeholder="So dien thoai">
+		<input type="text" name="txt4" placeholder="Thoi gian">
+		<br>
+		<button>Dat lich</button> 
+		</ul>
 	</div>
 </aside>
-<ul  style="width: 70%;display: inline-block">
+<ul  class="content_center">
 	<li class="item">
-	
+
 			<img src="../image/daucotay.jpg" class="iteminside">
-            <p class="textdescribe"><b class="index">dau co tay</b><br> ------------------------------------------------------------------------------</p>
+            <p class="textdescribe">
+            	<b class="index">dau co tay</b>
+            	<br> 
+            	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+            </p>
+            
+            <div class="arrow"></div>
+            
 			
 	</li>
 	<li class="item">
 			<img src="../image/chamnoi.jpg" class="iteminside">
-			 <p class="textdescribe"><b class="index">dau co tay</b><br> <------------------------------------------------------------------------------</p>
+			 <p class="textdescribe">
+			 	<b class="index">cham noi</b>
+			 	<br> 
+			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+			 </p>
+			<div class="arrow"></div>
 			 
 	</li>
 	<li class="item">
 		<img src="../image/chamnoi2.jpg" class="iteminside">
-			 <p class="textdescribe"><b class="index">dau co tay</b><br> ------------------------------------------------------------------------------</p>
+			 <p class="textdescribe">
+			 	<b class="index">cham noi</b>
+			 	<br> 
+			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+			 </p>
+			<div class="arrow"></div>
 			 
 	</li>
 	<li class="item">
 		<img src="../image/thoatvidiadem.jpg" class="iteminside">
-			 <p class="textdescribe"><b class="index">dau co tay</b><br> ------------------------------------------------------------------------------</p>
+			 <p class="textdescribe">
+			 	<b class="index">thoat vi dia dem</b>
+			 	<br> 
+			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+			</p>
+			<div class="arrow"></div>
 		
 	</li>
-	</ul>
+</ul>
 </main>
 </body>
 <footer class="footer">

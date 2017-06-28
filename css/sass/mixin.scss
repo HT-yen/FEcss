@@ -1,0 +1,20 @@
+@mixin my-padding-mixin($some-number) {
+  padding: $some-number;
+}
+@keyframes anihover{
+	100%{background-color: #AFC0C5;}
+}
+@mixin button_hover() {
+  	animation-name: anihover;
+   	animation-duration: 1s;
+	animation-iteration-count: infinite ;
+}
+@mixin text_perform(){
+	text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+}
+@mixin text_perform_title(){
+	@include text_perform();
+    text-decoration: underline;
+}
