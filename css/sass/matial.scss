@@ -17,6 +17,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .container{
 	align-items: center;
 	margin-top: 0px;
@@ -32,24 +33,38 @@
 .top{
 	/* background-color: #fff; */
 	margin-left: 150px;
+	margin-top: 0px;
 	width: 80%;
-	height: 100px;
-	display: inline-block;
-	.logo{
-		display: inline-block;
-		background: url("../image/logo.png");
-		animation-name: scale;
-		animation-duration: 2s;
-		animation-iteration-count: infinite ;
-		width: 9%;
-		height: 100%;
-		.textlogo{
-			margin: 20%;
-			@include text_perform();
-			color: #F8F450;
-			font-size: 18px;
-		}
-	}
+	// height: 100px;
+	display: block;
+	position: relative;
+	// .logo{
+	// 	display: block;
+	// 	background: url();
+	// 	margin-bottom: 5px;
+	// 	// animation-name: scale;
+	// 	// animation-duration: 2s;
+	// 	// animation-iteration-count: infinite ;
+		// width: 9%;
+		// height: 100%;
+		
+	// }
+}
+.textlogo{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	text-transform: uppercase;;
+	color: #1B2459;
+	font-size: 18px;
+}
+.text_aside{
+	position: absolute;
+	top: 30%;
+	right: 1%;
+	text-transform: uppercase;;
+	color: #1B2459;
+	font-size: 18px;
 }
 // .clear_fix::after
 // {
@@ -119,6 +134,7 @@ a{
 			@include text_perform_title();
     		color: #E84A22;
     		font-family:Lobster;
+    		display: inline-block;
 		}
 	}
 
@@ -147,17 +163,51 @@ a{
 
 .footer{
 	width: 100%;
-	height: 150px;
+	// height: 150px;
 	background: $bg_color;
 	text-align: center;
 	color: red;
+	.block_footer{
+		display: inline-block;
+		width: 80%;
+		margin-left: 10%;
+		.block_item{
+			display: inline-block;
+			width: 32%;
+			.block_title{
+				display: inline-block;
+				width: 100%;
+				text-transform: uppercase;
+				text-align:  center;
+				color: #770304;
+				text-decoration: bold;
+			}
+			.block_content{
+				padding: 0px;
+				display: inline-block;
+				width: 100%;
+				&.block_only{
+					li a{
+						color: #78A267;
+					}
+				}
+			}
+		}
+	}
 }
-.footer::after{
-	display: table;
-	width: 100%;
-	height: 100px;
-	background: $bg_color;
+.black_icon{
+	color: black;
 }
+
+a{
+	cursor: pointer;
+}
+// .footer::after{
+// 	display: table;
+// 	width: 100%;
+// 	height: 100px;
+// 	background: $bg_color;
+// }
 .supporter
 {
 	background: #EEA231;
@@ -225,23 +275,4 @@ a{
 	button:hover{
 		@extend .link:hover;
 	}	
-}
-
-@media screen and (min-width: 1000px) {
-    body {
-        background-color: #F8F7DF;
-
-    }
-}
-@media screen and (max-width: 680px) {
-    .item{
-	width: 45%;
-	}
-        
-}
-@media screen and (max-width: 620px) {
-    .item{
-	width: 70%;
-	}
-        
 }

@@ -2,30 +2,31 @@
 <html>
 <head>
 	            <title>Photoshop</title>
-	             <link rel="stylesheet" type="text/css" href="../css/style.css" />
-	             <script src="../js/jquery-latest.js">
+	            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+	            <link rel="stylesheet" type="text/css" href="../css/style.css" />
+	            <script src="../js/jquery-latest.js">
                   //path of use JQuery 
-                </script>
+              </script>
 
-                 <script>
+            	<script>
 
-                function showdown(id) { 
+              	function showdown(id) { 
                 var idstr="#"+id;  
                 $(idstr).toggle("show");
 
                 // $(idstr).css('display' , 'block');    
             
                 }
-                </script>
+              </script>
 
 	
 </head>
 <body >
-<header class="container">
+<header >
 <div class="top">
-	<div class="logo"><a href="#"><p class="textlogo"> Phong kham y</p></a></div>
-	<nav style="display: inline;">
-	    <ul style="display: inline;">
+	<a href="#"><image src="../image/logo.png" width="100px" height="100px"><span class="textlogo"> Phong kham chuyen khoa</span><span class="text_aside"> câu hỏi cho bác sĩ:0511 676 777   </span>></a>
+	<nav>
+	    <ul>
 			<li class="link">
 				<a onclick="showdown('gioithieu')" >Gioi thieu</a>
 				<div id="gioithieu" class="btdowncontain">
@@ -77,15 +78,17 @@
 		</ul>
 
 		<div class="left_item"> Tre em</div>
-		<div class="left_item"> Dat lich kham</div>
-		<ul>
-		<input type="text" name="txt1" placeholder="Ho & ten">
-		<input type="text" name="txt2" placeholder="Dia chi">
-		<input type="text" name="txt3" placeholder="So dien thoai">
-		<input type="text" name="txt4" placeholder="Thoi gian">
-		<br>
-		<button>Dat lich</button> 
-		</ul>
+		
+			<h2 class="left_item"> Dat lich kham</h2>
+			<ul>
+			<input type="text" name="txt1" placeholder="Ho & ten">
+			<input type="text" name="txt2" placeholder="Dia chi">
+			<input type="text" name="txt3" placeholder="So dien thoai">
+			<input type="text" name="txt4" placeholder="Thoi gian">
+			<button style="display: block;">Dat lich</button> 
+			</ul>
+		
+		
 	</div>
 </aside>
 <ul  class="content_center">
@@ -93,67 +96,97 @@
 
 			<img src="../image/daucotay.jpg" class="iteminside">
             <p class="textdescribe">
-            	<b class="index">dau co tay</b>
+            	<b><a href="#" class="index">dau co tay</a></b>
             	<br> 
             	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
             </p>
             
-            <div class="arrow"></div>
+            <a href="#" class="arrow"></a>
             
 			
 	</li>
 	<li class="item">
 			<img src="../image/chamnoi.jpg" class="iteminside">
 			 <p class="textdescribe">
-			 	<b class="index">cham noi</b>
+			 	<b><a href="#" class="index">cham noi</a></b>
 			 	<br> 
 			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
 			 </p>
-			<div class="arrow"></div>
+			<a href="#" class="arrow"></a>
 			 
 	</li>
 	<li class="item">
 		<img src="../image/chamnoi2.jpg" class="iteminside">
 			 <p class="textdescribe">
-			 	<b class="index">cham noi</b>
+			 	<b ><a href="#" class="index">cham noi</a></b>
 			 	<br> 
 			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
 			 </p>
-			<div class="arrow"></div>
+			<a href="#" class="arrow"></a>
 			 
 	</li>
 	<li class="item">
 		<img src="../image/thoatvidiadem.jpg" class="iteminside">
 			 <p class="textdescribe">
-			 	<b class="index">thoat vi dia dem</b>
+			 	<b><a href="#" class="index">thoat vi dia dem</a></b>
 			 	<br> 
 			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
 			</p>
-			<div class="arrow"></div>
+			<a href="#" class="arrow"></a>
 		
 	</li>
 </ul>
 </main>
 </body>
 <footer class="footer">
-Address: --------------------
-<div>
-	<nav>
-		<ul>
-			<li class="supporter">
-				b1
-			</li>
-			<li class="supporter">
-				b2
-			</li>
-			<li class="supporter">
-				b3
-			</li>
-			<li class="supporter">
-				b4
-			</li>
-		</ul>
-	</nav>
+<div class="block_footer">
+<div class="block_item">
+<div class="block_title">về phòng khám
+</div>
+<ul class="block_content">
+	<li >
+		<a href="#">giới thiệu chung</a>
+	</li>
+	<li>
+		<a href="#">nhân lực</a>
+	</li>
+	<li>
+		<a href="#">trang thiết bị và cơ sở vật chất</a>
+	</li>
+</ul>	
+</div>	
+<div class="block_item">
+<div class="block_title">
+	hỗ trợ
+</div>
+<ul class="block_content">
+	<li >
+		<a href="#">tư vấn sức khỏe</a>
+	</li>
+	<li>
+		<a href="#">y học thưởng thức</a>
+	</li>
+	<li>
+		<a href="#">đặt lịch khám</a>
+	</li>
+</ul>	
+</div>
+<div class="block_item">
+<div class="block_title">
+	kết nối xã hội
+</div>
+<ul class="block_content block_only">
+	<li >
+		<a href="#"><i class="fa fa-spinner fa-spin fa-border black_icon" ></i>facebook</a>
+	</li>
+	<li>
+		<a href="#"><i class="fa fa-circle-o-notch fa-spin fa-border black_icon"></i>google+</a>
+	</li>
+	<li>
+		<a href="#"><i class="fa fa-refresh fa-spin fa-border black_icon"></i>youtube</a>
+	</li>
+</ul>	
+</div>
 </div>
 </footer>
 </html>

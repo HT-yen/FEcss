@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body {
+html, body, header {
   margin: 0;
   padding: 0;
   border: 0;
@@ -76,24 +76,26 @@ table {
 .top {
   /* background-color: #fff; */
   margin-left: 150px;
+  margin-top: 0px;
   width: 80%;
-  height: 100px;
-  display: inline-block; }
-  .top .logo {
-    display: inline-block;
-    background: url("../image/logo.png");
-    animation-name: scale;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    width: 9%;
-    height: 100%; }
-    .top .logo .textlogo {
-      margin: 20%;
-      text-transform: uppercase;
-      text-align: center;
-      text-decoration: underline;
-      color: #F8F450;
-      font-size: 18px; }
+  display: block;
+  position: relative; }
+
+.textlogo {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  text-transform: uppercase;
+  color: #1B2459;
+  font-size: 18px; }
+
+.text_aside {
+  position: absolute;
+  top: 30%;
+  right: 1%;
+  text-transform: uppercase;
+  color: #1B2459;
+  font-size: 18px; }
 
 .headerlogo {
   text-align: center;
@@ -162,7 +164,8 @@ a {
       text-decoration: underline;
       text-decoration: underline;
       color: #E84A22;
-      font-family: Lobster; }
+      font-family: Lobster;
+      display: inline-block; }
   .item .arrow {
     right: 0;
     bottom: 0;
@@ -184,16 +187,35 @@ a {
 
 .footer {
   width: 100%;
-  height: 150px;
   background: #AFC0C5;
   text-align: center;
   color: red; }
+  .footer .block_footer {
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%; }
+    .footer .block_footer .block_item {
+      display: inline-block;
+      width: 32%; }
+      .footer .block_footer .block_item .block_title {
+        display: inline-block;
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #770304;
+        text-decoration: bold; }
+      .footer .block_footer .block_item .block_content {
+        padding: 0px;
+        display: inline-block;
+        width: 100%; }
+        .footer .block_footer .block_item .block_content.block_only li a {
+          color: #78A267; }
 
-.footer::after {
-  display: table;
-  width: 100%;
-  height: 100px;
-  background: #AFC0C5; }
+.black_icon {
+  color: black; }
+
+a {
+  cursor: pointer; }
 
 .supporter {
   background: #EEA231;
